@@ -1,1 +1,124 @@
 
+/* ESTILO GENERAL */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  color: #f8efff;
+  background: linear-gradient(135deg, #170d2e, #392052, #17142f);
+}
+
+/* ENCABEZADO */
+.encabezado {
+  text-align: center;
+  padding: 55px 20px;
+  background: linear-gradient(135deg, #27113e, #56346f);
+  border-bottom: 2px solid #c6a3e8;
+}
+
+.encabezado h1 {
+  font-size: 2.5rem;
+  color: #f5d9ff;
+  margin-bottom: 10px;
+}
+
+.encabezado p {
+  color: #e2c9f3;
+  font-style: italic;
+}
+
+/* CONTENIDO */
+.biblioteca {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.bienvenida,
+.vitral {
+  text-align: center;
+  padding: 35px 25px;
+  margin-bottom: 30px;
+  border: 1px solid #a987c5;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.bienvenida h2,
+.vitral h2,
+.habitaciones h2 {
+  color: #f1c9ff;
+}
+
+button {
+  background: #d4a8ed;
+  color: #28133b;
+  border: none;
+  padding: 13px 22px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background: #f0d7ff;
+  transform: scale(1.04);
+}
+
+/* PUERTAS A LOS DIFERENTES MUNDOS */
+.habitaciones {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.puertas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.puerta {
+  padding: 25px 15px;
+  border: 1px solid #a987c5;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #38234f, #211633);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.puerta:hover {
+  transform: translateY(-6px);
+  background: #50346b;
+}
+
+.puerta span {
+  font-size: 2.5rem;
+}
+
+.puerta h3 {
+  color: #f1d5ff;
+}
+
+/* PIE DE PÁGINA */
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #d8c3e8;
+  border-top: 1px solid #76578f;
+}
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 600px) {
+  .encabezado h1 {
+    font-size: 1.8rem;
+  }
+
+  .puertas {
+    grid-template-columns: 1fr;
+  }
+}
+
